@@ -1,5 +1,24 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
 
+// slide close when any link will clicked 
+let mobileSlider = document.querySelector('.mobile-menu');
+function closeSlider() {
+    mobileSlider.style.left = '-800px';
+}
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+// mobile slider 
+let mobileMenuIcon = document.querySelector('.mobile-toggle-icon');
+let closeButton = document.querySelector('.mobile-slider-close');
+
+mobileMenuIcon.addEventListener('click', (e)=> {
+    e.preventDefault();
+    console.log('button is clicked')
+    mobileSlider.style.left = '0px';
+})
+closeButton.addEventListener('click', (e)=> {
+    e.preventDefault();
+    mobileSlider.style.left = '-800px';
+});
 
 
 // accordion 

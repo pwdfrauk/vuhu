@@ -12,6 +12,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: normal;
+    position: relative;
 }
 .container {
     max-width: 1200px;
@@ -80,6 +81,7 @@ start  home Hero  section
 .vuhu-homehero-section {
     /* background: linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%); */
     background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);;
+    height: 100vh;
 }
 .navigation-area { 
     display: flex; width: 95%;
@@ -99,7 +101,6 @@ start  home Hero  section
 .logo-tile {
     display: flex;
     align-items: center;
-
 }
 .logo-tile h2 {
     font-size: 30px;
@@ -138,6 +139,54 @@ start  home Hero  section
 }
 .mobile-navigation {
     display: none !important;
+}
+/* mobile slider menu  */
+.mobile-menu {
+    position: absolute;
+    top: 0px;
+    left:-800px;
+    height: 100vh;
+    background: #820BF0;
+    padding: 20px;
+    width: 100%;
+    transition-duration: 1s;
+    display: none;
+}
+.mobile-toggle-icon {
+    cursor: pointer;
+}
+.menu-close-button {
+    text-align: right;
+}
+.menu-close-button i{
+    font-size: 20px;
+    color:#ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+.monile-menu-link {
+    padding-top: 80px;
+    padding-left: 40px;
+}
+.monile-menu-link a {
+    color:#fff;
+    display:block;
+    text-decoration: none;
+    margin-bottom: 30px;
+
+}
+.monile-menu-link a img {
+    color: #ffffff;
+    margin-left: 10px;
+}
+.mobile-menu-trial-button {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+transform: translateX(-50%);
+}
+.mobile-menu-trial-button  a.button-small {
+    background: #ffffff;
 }
 
 /* hero home area  */
@@ -224,7 +273,6 @@ Start  home Free trial  section
     margin-bottom: 20px;
 }
 .option-desc {
-    font-size: 18px;
     line-height: 2;
 }
 .option-link-button {
@@ -349,6 +397,12 @@ End footer Section
 ***************************
 */
 @media only screen and (max-width: 576px ) {
+    .vuhu-homehero-section {
+        height: 100%;
+    }
+    .mobile-menu {
+        display: block !important;
+    }
     .desktop-menu {
         display: none !important;
     }
@@ -362,7 +416,7 @@ End footer Section
         width: 53px;
         height: 50px;
     }
-    .logo-tile {
+    .logo-tile  h2{
         margin-left: 0px;
     }
     .button-small {
@@ -394,7 +448,6 @@ End footer Section
     .home-hero-button {
         padding: 15px 45px;
         font-size: 16px;
-
     }
     .hero-button {
         text-align: center;
@@ -416,7 +469,7 @@ End footer Section
         text-align: center;
     }
     .accordion-title {
-        font-size: 16px;
+        font-size: 14px;
     }
     .accordion-item-vuhu {
         margin-bottom: 30px;
