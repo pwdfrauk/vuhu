@@ -1,10 +1,17 @@
-/* Global Style  */
+/* 
+***********************************
+ Global Style  
+ **********************************
+ */
 * {
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
 }
 .container {
     max-width: 1200px;
@@ -25,6 +32,9 @@ body {
 }
 .bg-grey-2 {
    background: #4F4F4F;
+}
+.color-grey-2 {
+    color:#4F4F4F;
 }
 /* color name col -3  */
 /* hero section gradient  */
@@ -56,17 +66,15 @@ body {
     padding: 27px 100px;
     
 }
-
-
-
-
-
-
-
+/* 
+***********************************
+ end  Global Style  
+ **********************************
+ */
 
 /* 
 ***************************
-vuhu home Hero  section 
+start  home Hero  section 
 ***************************
 */
 .vuhu-homehero-section {
@@ -86,6 +94,9 @@ vuhu home Hero  section
 .logo-image {
     width: 126px;
     height: 121px;
+}
+.logo-image img {
+     width: 100%;
 }
 .logo-tile{
     font-size: 40px;
@@ -124,6 +135,9 @@ vuhu home Hero  section
 .navigation ul li a  .login-icon { 
     margin-right: 15px;
 }
+.mobile-navigation {
+    display: none !important;
+}
 
 /* hero home area  */
 .home-hero-area {
@@ -131,15 +145,16 @@ vuhu home Hero  section
     padding-bottom: 100px;
 }
 .home-hero-title {
-    font-size: 45px;
+    font-size: 54px;
     font-weight: 800;
     margin-bottom: 25px;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 .home-hero-desc {
-    margin-bottom: 22px;
+    margin-bottom: 35px;
     font-style: 18px;
     font-weight: normal;
+    color:#333333;
 }
 .home-hero-button {
     color:#ffffff;
@@ -161,3 +176,204 @@ vuhu home Hero  section
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+/* 
+***************************
+End  home Hero  section 
+***************************
+*/
+
+
+/* 
+***************************
+Start  home Free trial  section 
+***************************
+*/
+.free-trial-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.tree-trial-info {
+    width: 95%;
+    margin: auto;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+.free-trial-title {
+    font-size: 48px;
+    padding-bottom: 37px;
+}
+.free-trial-desc {
+    margin-bottom: 20px;
+}
+.free-trial-option {
+    margin-bottom: 62px;
+}
+.option-icon {}
+.option-icon img{
+    width: 100%;
+}
+.option-info {
+    margin-left: 115px;
+}
+.option-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.option-desc {
+    font-size: 18px;
+    line-height: 2;
+}
+.option-link-button {
+    text-decoration: none;
+    font-size: 16px;
+}
+.option-title,
+.option-desc,
+.option-link-button {
+    font-weight: 500;
+}
+/* 
+***************************
+End  home Free trial  section 
+***************************
+*/
+
+/* 
+***************************
+Start FAQ section 
+***************************
+*/
+.faq-section {
+    margin-bottom: 195px;
+}
+.faq-section-area {}
+.faq-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 500;
+}
+.faq-subtitle {
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+/*  Accordion  */
+.accordion-item-vuhu {
+    margin-bottom: 20px;
+}
+.accordin-header {
+    padding:26px 40px;
+    box-shadow: 8px 8px 0px #4f4f4f;
+}
+.accordion-title {
+    font-size: 24px;
+    font-weight: 600;
+    color:#ffffff;
+    margin-bottom: 0px;
+}
+.accordion-header-icon {
+    display: inline;
+}
+.accordion-header-icon i {
+    color:#ffffff;
+}
+.accordin-info-body {
+    color:#ffffff;
+    padding:45px 32px;
+    box-shadow: 8px 0px 0px #4f4f4f;
+    margin-left: 8px;
+    display: none;
+}
+.open {
+    display: block;
+}
+.accordion-desc {}
+/* 
+***************************
+End FAQ section 
+***************************
+*/
+/* 
+***************************
+Start footer Section  
+***************************
+*/
+footer {
+    padding: 20px;
+}
+.footer-info {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+.footer-logo-area {
+    margin-bottom: 35px;
+}
+.footer-logo {
+}
+.footer-logo-title {
+    color:#ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+.footer-logo-title h2 {}
+.footer-desc {
+    color:#ffffff;
+    font-size: 14px;
+}
+.footer-nav {}
+.footer-nav h5 {
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+.footer-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color:#fff;
+    display: block;
+}
+.copyright-text {}
+.copyright-text p {
+    color: #fff;
+}
+/* 
+***************************
+End footer Section  
+***************************
+*/
+@media only screen and (max-width: 576px ) {
+    .desktop-menu {
+        display: none !important;
+    }
+    .mobile-navigation {
+        display: flex !important;
+    }
+    .vuhu-logo {
+        flex-direction: column;
+    }
+    .logo-image {
+        width: 53px;
+        height: 50px;
+    }
+    .logo-tile {
+        margin-left: 0px;
+    }
+    .button-small {
+        padding: 7px 10px;
+    }
+    .navigation {
+        width: 70%;
+    }
+    .hero-info {
+        order:2 !important;
+    }
+    .hero-home-img {
+        order: 1 !important;
+        margin-bottom: 20px;
+    }
+    .home-hero-area {
+        margin-top: 5px;
+    }
+}
