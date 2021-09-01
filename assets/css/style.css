@@ -191,7 +191,7 @@ transform: translateX(-50%);
 
 /* hero home area  */
 .home-hero-area {
-    margin-top: 45px;
+    margin-top: 70px;
     padding-bottom: 45px;
  
 }
@@ -410,10 +410,26 @@ footer {
 End footer Section  
 ***************************
 */
-@media only screen and (max-width: 576px ) {
+@media only screen and (max-width: 1024px ) {
     .vuhu-homehero-section {
         height: 100%;
     }
+}
+@media only screen and (max-width: 768px ) {
+    .navigation {
+        width: 70%;
+        margin-left: auto;
+    }
+    .home-hero-title {
+        font-size: 22px;
+    }
+    .free-trial-title {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 576px ) {
     .mobile-menu {
         display: block !important;
         z-index: 999;
