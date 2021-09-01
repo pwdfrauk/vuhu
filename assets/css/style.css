@@ -219,9 +219,23 @@ transform: translateX(-50%);
     color:#ffffff;
 }
 .hero-home-img {
+    text-align: center;
+    position: relative;
 }
 .hero-home-img img {
+    
+}
+.hero-mobile-img {
+    z-index: 20;
+    position: relative;
+}
+.mobile-shadow-img {
+    z-index: 10;
+    position: relative;
+    margin-top: -50px;
     width: 100%;
+}
+.mobile-shadow {
 }
 .gradient-text {
     background: -webkit-linear-gradient(180deg, rgba(253,29,29,1) 0%, rgba(245,96,64,1) 50%, rgba(131,58,180,1) 100%);
@@ -402,6 +416,7 @@ End footer Section
     }
     .mobile-menu {
         display: block !important;
+        z-index: 999;
     }
     .desktop-menu {
         display: none !important;
