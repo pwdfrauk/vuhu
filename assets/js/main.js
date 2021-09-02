@@ -9,17 +9,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // mobile slider 
 let mobileMenuIcon = document.querySelector('.mobile-toggle-icon');
 let closeButton = document.querySelector('.mobile-slider-close');
+let body = document.querySelector('body');
+let showPss = document.querySelector('.show-pass-icon');
+var inputType = document.querySelector('#password');
 
 mobileMenuIcon.addEventListener('click', (e)=> {
     e.preventDefault();
     console.log('button is clicked')
     mobileSlider.style.left = '0px';
+    if ( mobileSlider.style.left = '0px') {
+        body.style.overflow = 'hidden';
+    }
 })
 closeButton.addEventListener('click', (e)=> {
     e.preventDefault();
     mobileSlider.style.left = '-800px';
+    if ( mobileSlider.style.left < '500px') {
+        body.style.overflow = 'auto';
+    }
 });
-
+// Password show on click and hide 
+if(!showPss) {
+   return showPss= '';
+}
+showPss.addEventListener('mousedown', (e)=> {
+    e.preventDefault();
+    inputType.type = 'text';
+})
+showPss.addEventListener('mouseup', (e)=> {
+    e.preventDefault();
+    inputType.type = 'password';
+})
 
 // accordion 
 let accordionHeader = document.querySelectorAll('.accordin-header');

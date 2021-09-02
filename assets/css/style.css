@@ -1,6 +1,31 @@
 /* 
+Name : Vuhu 
+
+introduction css style sheet 
+    1 Golabal style 
+        1.1 golabal css
+        1.2 navigation style 
+    2. index.html ( home page )
+        2.1 hero section 
+        2.2 home Free trial  section 
+        2.3 Start FAQ section 
+        2.4 footer section
+        2.5 Home  page responsive Style
+    3 Register page yes 
+        3.1 page design 
+        3.2 responsive style 
+
+
+
+
+
+
+
+
+*/
+/* 
 ***********************************
- Global Style  
+  1.1 Global Style  
  **********************************
  */
 * {
@@ -27,6 +52,9 @@ body {
 /* color name col - 2  Whisper */
 .color-whisper {
     color:#ECE9F1;
+}
+.color-black-3 {
+    color:#333333;
 }
 .bg-whisper {
     background: #ECE9F1;
@@ -72,18 +100,11 @@ body {
  end  Global Style  
  **********************************
  */
-
-/* 
-***************************
-start  home Hero  section 
-***************************
-*/
-.vuhu-homehero-section {
-    /* background: linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%); */
-    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);;
-    height: 100vh;
-}
-.navigation-area { 
+ /* *****************
+    1.2 navigation area 
+ *********************
+ */
+ .navigation-area { 
     display: flex; width: 95%;
     margin:auto;
     align-items: center;
@@ -188,7 +209,22 @@ transform: translateX(-50%);
 .mobile-menu-trial-button  a.button-small {
     background: #ffffff;
 }
+/* end navigation area  */
 
+/* ********************** 2 Start Home page ******************************** */
+
+
+
+/* 
+***************************
+    2.1 start  home Hero  section 
+***************************
+*/
+.vuhu-homehero-section {
+    /* background: linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%); */
+    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);
+    height: 100vh;
+}
 /* hero home area  */
 .home-hero-area {
     margin-top: 70px;
@@ -200,13 +236,11 @@ transform: translateX(-50%);
     font-weight: 800;
     margin-bottom: 25px;
     line-height: 1.5;
-    color:#333333;
 }
 .home-hero-desc {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: normal;
-    color:#333333;
 }
 .home-hero-button {
     color:#ffffff;
@@ -252,7 +286,7 @@ End  home Hero  section
 
 /* 
 ***************************
-Start  home Free trial  section 
+ 2.2 Start  home Free trial  section 
 ***************************
 */
 .free-trial-section {
@@ -306,7 +340,7 @@ End  home Free trial  section
 
 /* 
 ***************************
-Start FAQ section 
+ 2.3 Start FAQ section 
 ***************************
 */
 .faq-section {
@@ -360,7 +394,7 @@ End FAQ section
 */
 /* 
 ***************************
-Start footer Section  
+2.4 Start footer Section  
 ***************************
 */
 footer {
@@ -409,6 +443,10 @@ footer {
 ***************************
 End footer Section  
 ***************************
+*/
+/* ***************
+    2.5 Home  page responsive Style 
+*******************
 */
 @media only screen and (max-width: 1024px ) {
     .vuhu-homehero-section {
@@ -527,6 +565,130 @@ End footer Section
     .copyright-text p {
         font-size: 13px;
     }
-
-
 }
+/******************************
+End Home page Responsive style 
+********************************
+ */
+/* *************************************  End Home page ********************************** */
+
+
+/* ******************************* Start  Resgister page  ********************************/
+/* *******************************
+3.1 Register apge yes design 
+***********************************
+ */
+.register-page-hero-section {
+    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);  
+}
+.register-hero-area {
+    margin-top: 70px;
+    padding-bottom: 45px;
+ 
+}
+.register-page-img {
+    height: 475px;
+}
+.reg-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+.reg-desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 15px;;
+    border: 2px solid rgba(51, 51, 51, 0.5);
+    outline: none;
+}
+input[type='email'],
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+}
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+input::focus {
+    outline: none;;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+.input-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.show-pass-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.invite-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.checkbox-area {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.coupon-code {
+    margin-bottom: 20px;
+}
+.coupon-code-number {
+    width: 30px;
+    height: 30px;
+    border-bottom:2px solid rgba(51, 51, 51, 0.5);
+    ;
+    display: inline-block;
+    margin-right: 35px;
+}
+.from-submit-button {
+    border:none;
+    padding: 16px 70px;
+    color: #ffffff;
+}
+/* 
+**********************************
+3.2 register page Responsive Style 
+************************************
+ */
+ @media only screen and (max-width: 760px ) {
+    .register-page-hero-section  {
+        height: 100vh;
+    }
+    .register-page-hero-section .hero-home-img {
+        display: none;
+    }
+
+ }
+ @media only screen and (max-width: 576px ) {
+    .register-page-hero-section  {
+        height: 100%;
+    }
+    .register-hero-area {
+        padding: 50px 0px;
+        width: 95%;
+        margin: auto;
+    }
+    .reg-title {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+   
+ }
+
+/* ******************************* End  Resgister page  ********************************/
