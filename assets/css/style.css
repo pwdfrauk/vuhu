@@ -81,6 +81,7 @@ body {
     padding:12px 30px;
     box-shadow: 4px 4px 0px #000000;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 /* learg button  */
 .button-large {
@@ -93,7 +94,22 @@ body {
     box-shadow: 7px 7px 0px #000000;
     text-decoration: none;
     padding: 20px 68px;
-    
+    transition: 0.3s ease;
+}
+.button-small::after,
+.button-large::after {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: transparent !important;
+}
+.button-large:hover {
+    box-shadow: 5px 5px 0px #000000;
+	transform: translateY(2px);
+}
+.button-small:hover {
+    box-shadow: 3px 3px 0px #000000;
+    transform: translateY(1px);
 }
 /* 
 ***********************************
@@ -150,6 +166,26 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.navigation ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.navigation ul li a:hover::after {
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.navigation ul li a.active::after {
+    width: 100% ;
 }
 .navigation ul li a.button-small {
     color:#ffffff;
@@ -157,6 +193,7 @@ body {
 }
 .navigation ul li a  .login-icon { 
     margin-right: 15px;
+    width: 17px;
 }
 .mobile-navigation {
     display: none !important;
@@ -326,11 +363,23 @@ End  home Hero  section
 .option-link-button {
     text-decoration: none;
     font-size: 16px;
+    display: inline;
 }
 .option-title,
 .option-desc,
 .option-link-button {
     font-weight: 500;
+}
+.option-link-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.option-link-button:hover::after {
+    width: 35% !important;
 }
 /* 
 ***************************
@@ -580,6 +629,7 @@ End Home page Responsive style
  */
 .register-page-hero-section {
     background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);  
+    height:100Vh;
 }
 .register-hero-area {
     margin-top: 70px;

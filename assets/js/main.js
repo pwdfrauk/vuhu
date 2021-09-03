@@ -1,4 +1,6 @@
 
+/*wow js*/
+new WOW().init();
 // slide close when any link will clicked 
 let mobileSlider = document.querySelector('.mobile-menu');
 function closeSlider() {

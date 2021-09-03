@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuhu</title>
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- font wesome  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- google font inter  -->
@@ -32,7 +34,7 @@
                         </div>
                         <div class="navigation">
                             <ul class="desktop-menu">
-                                <li><a href="#">home</a> </li>
+                                <li><a class="active" href="#">home</a> </li>
                                 <li><a href="#">support</a></li>
                                 <li><a class="button-small" href="register.html">14-day free trial</a></li>
                                 <li> <a href="#">
@@ -72,7 +74,7 @@
         <div class="home-hero-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 hero-info">
+                    <div class="col-md-7 hero-info wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                         <h1 class="home-hero-title color-black-3">Grow your <span class="gradient-text">Instragram</span> <br>
                              following organically, using <br>
                             our automated platform
@@ -87,9 +89,9 @@
                         </div>
                         <p class="home-hero-desc">*we will only ever ask for your payment details AFTER your trial has finished.</p>
                     </div>
-                    <div class="col-md-5 hero-home-img">
+                    <div class="col-md-5 hero-home-img wow animate__animated animate__slideInRight" data-wow-duration="">
                         <img class="hero-mobile-img" src="images/mobileoptimize.gif" alt="mobile-img">
-                        <img class="mobile-shadow-img" src="images/mobile-shadow.png" alt="mobile-shadow">
+                        <!-- <img class="mobile-shadow-img" src="images/mobile-shadow.png" alt="mobile-shadow"> -->
                     </div>
                 </div>
             </div>
@@ -98,12 +100,12 @@
     <section class="free-trial-section">
         <div class="container">
             <div class="tree-trial-info">
-                <h2 class="free-trial-title text-center">A free trial on an invite only scheme,
+                <h2 class="free-trial-title text-center wow animate__animated animate__slideInDown" data-wow-duration="2s">A free trial on an invite only scheme,
                      then just 
                      <span class="trial-title-amount color-violet">£14.99</span> per month</h2>
-                <p class="free-trial-desc color-grey-2 text-center">We love providing this platform, 
+                <p class="free-trial-desc color-grey-2 text-center wow animate__animated animate__slideInUp" data-wow-duration="2s">We love providing this platform, 
                     and we will ensure you there will never be any price hikes during your subscription. Growing your following automatically has never been easier, using our specialist formula created over the past 5 years. </p>
-                <p class="free-trial-desc color-grey-2 text-center">Simply connect your Instagram account, 
+                <p class="free-trial-desc color-grey-2 text-center wow animate__animated animate__slideInUp" data-wow-duration="2s">Simply connect your Instagram account, 
                     add your favourite accounts that match your demographic, and our system will do the rest! 
                     <br><br>
                     Leaving you to relax and enjoy as you refresh your dashboard to view your incremental growth in realtime. 
@@ -112,11 +114,11 @@
             <!-- option 1 -->
             <div class="free-trial-option">
                 <div class="option ">
-                    <div class="row justify-content-md-center">
-                        <div class="option-icon col-md-3">
+                    <div class="row justify-content-md-center ">
+                        <div class="option-icon col-md-3 wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                             <img src="images/coment-icon.png" alt="coment-icon">
                         </div>
-                        <div class="option-info col-md-5">
+                        <div class="option-info col-md-5 wow animate__animated animate__slideInRight" data-wow-duration="2s">
                             <h2 class="option-title">Over 10,000 users</h2>
                             <p class="option-desc color-grey-2">Join over 10,000 users, growing their followings organically.
                                  If you've received an invitation to sign up, 
@@ -133,10 +135,10 @@
             <div class="free-trial-option">
                 <div class="option ">
                     <div class="row justify-content-md-center">
-                        <div class="option-icon col-md-3">
+                        <div class="option-icon col-md-3 wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                             <img src="images/growth-chart 1.png" alt="coment-icon">
                         </div>
-                        <div class="option-info col-md-5">
+                        <div class="option-info col-md-5 wow animate__animated animate__slideInRight" data-wow-duration="2s">
                             <h2 class="option-title">Organic growth only</h2>
                             <p class="option-desc color-grey-2">
                                 Our platform delivers only real users, 
@@ -154,10 +156,10 @@
             <div class="free-trial-option">
                 <div class="option ">
                     <div class="row justify-content-md-center">
-                        <div class="option-icon col-md-3">
+                        <div class="option-icon col-md-3 wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                             <img src="images/dart1.png" alt="coment-icon">
                         </div>
-                        <div class="option-info col-md-5">
+                        <div class="option-info col-md-5 wow animate__animated animate__slideInRight" data-wow-duration="2s">
                             <h2 class="option-title">Completely free to try</h2>
                             <p class="option-desc color-grey-2">
                                 During your 14-day free trial we will not ask for payment details. 
@@ -174,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section class="faq-section">
+    <section class="faq-section text-center wow animate__animated animate__slideInUp" data-wow-duration="2s">
         <div class="container">
             <div class="faq-section-area col-md-10 offset-md-1">
                 <h2 class="faq-title text-center mb-4">FAQ</h2>
@@ -185,7 +187,7 @@
                     <!-- faq -->
                 <div class="accordion">
                     <!-- accordion 1 -->
-                    <div class="accordion-item-vuhu">
+                    <div class="accordion-item-vuhu wow animate__animated animate__slideInRight" data-wow-duration="2s">
                         <div class="accordin-header bg-violet">
                             <div class="row">
                                 <div class="col-11">
@@ -213,7 +215,7 @@
                         </div>
                     </div>
                     <!-- accordion 2 -->
-                    <div class="accordion-item-vuhu">
+                    <div class="accordion-item-vuhu  wow animate__animated animate__slideInRight" data-wow-duration="2s">
                         <div class="accordin-header bg-violet">
                             <div class="row">
                                 <div class="col-11">
@@ -241,7 +243,7 @@
                         </div>
                     </div>
                     <!-- accordion 3 -->
-                    <div class="accordion-item-vuhu">
+                    <div class="accordion-item-vuhu  wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                         <div class="accordin-header bg-violet">
                             <div class="row">
                                 <div class="col-11">
@@ -269,7 +271,7 @@
                         </div>
                     </div>
                     <!-- accordion 4 -->
-                      <div class="accordion-item-vuhu">
+                      <div class="accordion-item-vuhu wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                         <div class="accordin-header bg-violet">
                             <div class="row">
                                 <div class="col-11">
@@ -305,7 +307,7 @@
     <footer class="bg-grey-2">
         <div class="container">
             <div class="row footer-info">
-                <div class="col-sm-8 col-md-10">
+                <div class="col-sm-8 col-md-10 wow animate__animated animate__slideInLeft" data-wow-duration="2s">
                     <div class="row footer-logo-area">
                         <div class="col-3 col-md-2 col-xl-1 footer-logo">
                             <img  src="images/footer-logo.png" alt="logo">
@@ -320,7 +322,7 @@
                     <p class="footer-desc"> For anything you might need, please contact support here.
                     <p class="footer-desc"> Or contact us on directly on support@vuhu.io </p>
                 </div>
-                <div class="col-sm-4 col-md-2 footer-nav">
+                <div class="col-sm-4 col-md-2 footer-nav wow animate__animated animate__slideInRight" data-wow-duration="2s">
                     <h5>Useful Links:</h5>
                         <a href="#">Home </a>
                         <a href="#">Free trial</a>
@@ -344,9 +346,10 @@
 
 
 <script></script>
-
-    <!-- boostrap js  -->
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- wow.js -->
+     <script src="assets/vendors/js/wow.min.js"></script>
     <!-- main js -->
          <script src="assets/js/main.js"></script>
 </body>
