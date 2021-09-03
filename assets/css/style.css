@@ -39,8 +39,16 @@ body {
     font-weight: normal;
     position: relative;
 }
+a {
+    text-decoration: none !important;
+}
+
 .container {
     max-width: 1200px;
+}
+.bg-gradient {
+    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important
+    ;
 }
 /* color name col- 1 Electric Violet */
 .color-violet  {
@@ -54,7 +62,10 @@ body {
     color:#ECE9F1;
 }
 .color-black-3 {
-    color:#333333;
+    color:#333333 !important;
+}
+.color-black {
+    color:#000000 !important;
 }
 .bg-whisper {
     background: #ECE9F1;
@@ -125,6 +136,9 @@ body {
     margin:auto;
     align-items: center;
     padding-top: 20px;
+}
+.navigation-area .logo-link {
+    text-decoration: none !important;
 }
 .vuhu-logo {
     display: flex;
@@ -259,7 +273,6 @@ transform: translateX(-50%);
 */
 .vuhu-homehero-section {
     /* background: linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%); */
-    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);
     height: 100vh;
 }
 /* hero home area  */
@@ -624,11 +637,11 @@ End Home page Responsive style
 
 /* ******************************* Start  Resgister page  ********************************/
 /* *******************************
-3.1 Register apge yes design 
+3.1 Register apge yes design + Register no page style 
 ***********************************
  */
 .register-page-hero-section {
-    background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%);  
+   
     height:100Vh;
 }
 .register-hero-area {
@@ -712,7 +725,7 @@ input::focus {
 }
 /* 
 **********************************
-3.2 register page Responsive Style 
+3.2 register page Responsive Style + register no page style 
 ************************************
  */
  @media only screen and (max-width: 760px ) {
@@ -742,3 +755,81 @@ input::focus {
  }
 
 /* ******************************* End  Resgister page  ********************************/
+.login-page-area {
+}
+.login-hero-area {
+   
+}
+.progress-bar-password {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: -10px;
+
+}
+.progress-line-pass  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    border-radius: 10px;
+}
+.support-subject {
+    padding-left: 20px !important;
+}
+textarea {
+    padding: 20px;
+}
+.login-section {
+    display: flex;
+    height:calc(100vh - 93px);
+}
+.log-in-area {
+    width: 40%;
+    margin: auto;
+}
+.log-in-title {
+    font-size: 45px;
+    font-weight: 800;
+}
+.login-sub-title {
+    font-size: 18px;
+}
+.forgot-pass-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.are-you-user {
+    font-size: 18px;
+}
+.are-you-user .asking-user {
+    font-weight: 500;
+}
+.are-you-user .free-trial-link {
+    font-weight: 600;
+}
+@media only screen and (max-width: 768px )  {
+    .log-in-area {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 576px ) {
+    .log-in-area {
+        width: 95%;
+        margin: auto;
+    }
+    .log-in-title {
+        font-size: 24px;
+    }
+ 
+    .are-you-user .free-trial-link {
+        display: block;
+    }
+}
+/* 
+login page style 
+*/

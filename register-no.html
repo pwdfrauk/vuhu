@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="logo-tile">
                                     <h2 >vuhu</h2>
-                                </div>
+                                </div>   
                         </div>
                     </a>
                         <div class="navigation">
@@ -88,32 +88,21 @@
                                 <img class="input-icon"  src="images/email.png" alt="icon">
                                 
                             </div>
-                             <div class="input-group">
-                                <input type="password" id="password" name="password" placeholder="Password">
-                                <img  class="input-icon" src="images/pass.png" alt="icon">
-                                <img class="show-pass-icon" src="images/ant-design_eye-invisible-filled.png" alt="icon">
-                            </div>
                             <h2 class="invite-title color-balck-3 ">Have you received an invite?</h2>
                             <div class="input-group checkbox-area col-12">
                                 <div class="row d-flex col-6 col-md-4 align-items-center">
                                     <input class="col-4 col-md-2" type="checkbox" id="invite-yes" name="yes"
-                                           checked>
+                                           >
                                     <label class="col-4 col-md-3" for="invite-yes">Yes</label>
                                   </div>
                                   <div class="row d-flex col-6 col-md-4 align-items-center">
-                                    <input class="col-4 col-md-2" type="checkbox" id="invite-no" name="no">
+                                    <input class="col-4 col-md-2" type="checkbox" id="invite-no" name="no" checked>
                                     <label class=" col-4 col-md-3" for="invite-no">No</label>
-                                    <!-- when check box no clicked then go this link -->
-                                    <a class="go-register-no-page" href="register-no.html"></a>
                                   </div>
                             </div>
-                            <h2 class="invite-title color-balck-3 ">Your Coupon Number </h2>
-                            <div class="coupon-code">
-                                <span class="coupon-code-number"></span>
-                                <span class="coupon-code-number"></span>
-                                <span class="coupon-code-number"></span>
-                                <span class="coupon-code-number"></span>
-                            </div>
+                            <h2 class="invite-title color-balck-3 ">Sorry, registration is currently invitation only
+                            </h2>
+                            <p>However you can join our waiting list by submitting your email address, invitations are sent on a first come first served basis.</p>
                             <div class="reg-submit-button text-center text-md-start">
                                 <input class="button-large from-submit-button" type="submit" value="Submit">
                             </div>
@@ -129,20 +118,7 @@
     </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", function(event) { 
-    let showPss = document.querySelector('.show-pass-icon');
-    var inputType = document.querySelector('#password');
-    // Password show on click and hide 
-        showPss.addEventListener('mousedown', (e)=> {
-            e.preventDefault();
-            inputType.type = 'text';
-            console.log('clicked')
-        })
-        showPss.addEventListener('mouseup', (e)=> {
-            e.preventDefault();
-            inputType.type = 'password';
-        })
-            });
+  
 </script>
 
     <!-- boostrap js  -->

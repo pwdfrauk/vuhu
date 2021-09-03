@@ -20,10 +20,11 @@
 
 </head>
 <body>
-    <section class="vuhu-homehero-section">
+    <section class="vuhu-homehero-section bg-gradient">
         <header>
             <div class="container-fluid">
                 <div class="navigation-area">
+                    <a class="logo-link" href="#">
                         <div class="vuhu-logo">
                                 <div class="logo-image">
                                     <img src="images/logo.png" alt="logo">
@@ -32,6 +33,7 @@
                                     <h2 >vuhu</h2>
                                 </div>
                         </div>
+                    </a>
                         <div class="navigation">
                             <ul class="desktop-menu">
                                 <li><a class="active" href="#">home</a> </li>
@@ -345,7 +347,12 @@
 
 
 
-<script></script>
+    <script>
+     document.addEventListener("DOMContentLoaded", function(event) { 
+           /*wow js*/
+            new WOW().init();
+     })
+    </script>
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <!-- wow.js -->
