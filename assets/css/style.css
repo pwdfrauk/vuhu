@@ -641,6 +641,7 @@ End Home page Responsive style
 .register-page-hero-section {
    
     height:calc(100vh + 20vh);
+    
 }
 .register-hero-area {
     margin-top: 70px;
@@ -737,7 +738,7 @@ input::focus {
  }
  @media only screen and (max-width: 576px ) {
     .register-page-hero-section  {
-        height: 100%;
+        height: calc(100vh + 20vh)
     }
     .register-hero-area {
         padding: 50px 0px;
