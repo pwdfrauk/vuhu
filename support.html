@@ -22,17 +22,42 @@
         <header>
             <div class="container-fluid">
                 <div class="navigation-area">
-                    <a class="logo-link" href="#">
+                    <a class="logo-link" href="index.html">
                         <div class="vuhu-logo">
                                 <div class="logo-image">
                                     <img src="images/logo.png" alt="logo">
                                 </div>
                                 <div class="logo-tile">
                                     <h2 >vuhu</h2>
-                                </div>   
+                                </div>
                         </div>
                     </a>
-                        
+                        <div class="navigation">
+                            <!-- mobile menu click icon  -->
+                            <ul class="mobile-navigation">
+                                <li><a class="button-small" href="register.html">14-day free trial</a></li>
+                                <li>
+                                    <img class="mobile-toggle-icon" src="images/mobile-icon.png" alt="mobile-menu-icon">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- mobile slider nemu  -->
+                        <div class="mobile-menu">
+                            <div class="menu-close-button">
+                                <i class="fas fa-times mobile-slider-close"></i>
+                            </div>
+                            <div class="monile-menu-link">
+                                <a onclick="closeSlider()" href="index.html">Home</a>
+                                <a onclick="closeSlider();" href="support.html">Support</a>
+                                <a onclick="closeSlider();" href="login.html">
+                                    <span>Log in</span>
+                                    <img class="login-icon" src="images/login-white.png" alt="login-icon">
+                                </a>
+                            </div>
+                            <div class="mobile-menu-trial-button">
+                                <a onclick="closeSlider();" class="button-small" href="register.html">14-day free trial</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </header>
