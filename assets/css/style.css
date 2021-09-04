@@ -49,6 +49,8 @@ a {
 .bg-gradient {
     background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important
     ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* color name col- 1 Electric Violet */
 .color-violet  {
