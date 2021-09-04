@@ -80,10 +80,6 @@ a {
 }
 /* color name col -3  */
 /* hero section gradient  */
-.hero-gradient {
-    background:linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%);
-    opacity: 0.5;
-}
 /* button sm */
 .button-small {
     background:#820BF0;
@@ -275,7 +271,7 @@ transform: translateX(-50%);
 */
 .vuhu-homehero-section {
     /* background: linear-gradient(101.33deg, #F8C136 -8.88%, #F596B0 107.4%); */
-    height: 100vh;
+    height:calc(100vh + 20vh);
 }
 /* hero home area  */
 .home-hero-area {
@@ -644,7 +640,7 @@ End Home page Responsive style
  */
 .register-page-hero-section {
    
-    height:100Vh;
+    height:calc(100vh + 20vh);
 }
 .register-hero-area {
     margin-top: 70px;
@@ -758,7 +754,7 @@ input::focus {
 
 /* ******************************* End  Resgister page  ********************************/
 .login-page-area {
-    height:100vh;
+    height: calc(100vh + 20vh);
 }
 .login-hero-area {
    
@@ -797,7 +793,6 @@ textarea {
 .log-in-area {
     width: 40%;
     padding-top: 80px;
-    padding-bottom: 80px;
 }
 .log-in-title {
     font-size: 45px;
