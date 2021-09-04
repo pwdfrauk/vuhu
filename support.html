@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body class="">
+<body>
     <section class="login-page-area bg-gradient">
         <header>
             <div class="container-fluid">
                 <div class="navigation-area">
-                    <a class="logo-link" href="index.html">
+                    <a class="logo-link" href="#">
                         <div class="vuhu-logo">
                                 <div class="logo-image">
                                     <img src="images/logo.png" alt="logo">
@@ -33,11 +33,20 @@
                         </div>
                     </a>
                         <div class="navigation">
+                            <ul class="desktop-menu">
+                                <li><a  href="index.html">home</a> </li>
+                                <li><a class="active" href="#">support</a></li>
+                                <li><a class="button-small" href="register.html">14-day free trial</a></li>
+                                <li> <a href="login.html">
+                                        <img class="login-icon" src="images/vector.png" alt="login-icon">
+                                        <span>Log in</span>
+                                    </a></li>
+                            </ul>
                             <!-- mobile menu click icon  -->
                             <ul class="mobile-navigation">
                                 <li><a class="button-small" href="register.html">14-day free trial</a></li>
                                 <li>
-                                    <img class="mobile-toggle-icon" src="images/mobile-icon.png" alt="mobile-menu-icon">
+                                    <i class="mobile-toggle-icon fas fa-bars"></i>
                                 </li>
                             </ul>
                         </div>
@@ -48,7 +57,7 @@
                             </div>
                             <div class="monile-menu-link">
                                 <a onclick="closeSlider()" href="index.html">Home</a>
-                                <a onclick="closeSlider();" href="support.html">Support</a>
+                                <a onclick="closeSlider();" href="#">Support</a>
                                 <a onclick="closeSlider();" href="login.html">
                                     <span>Log in</span>
                                     <img class="login-icon" src="images/login-white.png" alt="login-icon">
@@ -58,12 +67,13 @@
                                 <a onclick="closeSlider();" class="button-small" href="register.html">14-day free trial</a>
                             </div>
                         </div>
+
                 </div>
             </div>
         </header>
         <div class="login-hero-area">
             <div class="container">
-                <div class="login-section" style="">
+                <div class="login-section">
                    <div class="log-in-area">
                         <h1 class="log-in-title color-black-3 text-center text-md-start mb-4 mb-md-2">Support</h1>
                         <p class="login-sub-title color-black-3 text-center text-md-start mb-4">Simply register an account by selecting your email </p>

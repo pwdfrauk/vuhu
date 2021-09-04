@@ -88,7 +88,7 @@ a {
     text-align: center;
     display: inline-block;
     padding:12px 30px;
-    box-shadow: 4px 4px 0px #000000;
+    box-shadow: 2px 2px 0px #000000;
     text-decoration: none;
     transition: 0.3s ease;
 }
@@ -100,7 +100,7 @@ a {
     text-align: center;
     display: inline-block;
     padding:12px 30px;
-    box-shadow: 7px 7px 0px #000000;
+    box-shadow: 4px 4px 0px #000000;
     text-decoration: none;
     padding: 20px 68px;
     transition: 0.3s ease;
@@ -113,11 +113,11 @@ a {
     background-color: transparent !important;
 }
 .button-large:hover {
-    box-shadow: 5px 5px 0px #000000;
+    box-shadow: 3px 3px 0px #000000;
 	transform: translateY(2px);
 }
 .button-small:hover {
-    box-shadow: 3px 3px 0px #000000;
+    box-shadow: 1px 1px 0px #000000;
     transform: translateY(1px);
 }
 /* 
@@ -224,6 +224,8 @@ a {
 }
 .mobile-toggle-icon {
     cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
 }
 .menu-close-button {
     text-align: right;
@@ -547,6 +549,8 @@ End footer Section
     }
     .logo-tile  h2{
         margin-left: 0px;
+        font-size: 20px;
+        margin-top: -5px;
     }
     .button-small {
         padding: 7px 10px;

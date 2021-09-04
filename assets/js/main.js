@@ -89,12 +89,24 @@ accordionHeader.forEach(function(trigger) {
 // register checkbox No click 
 let checkboxNo = document.querySelector('#invite-no');
 let registerNoPage = document.querySelector('.go-register-no-page');
+let checkboxYes = document.querySelector('#invite-yes'); 
+let registerPage = document.querySelector('.go-register-page');
 if (!checkboxNo) {
     return checkboxNo = '';
 }
 checkboxNo.addEventListener('click', (e)=> {
-    registerNoPage.click()
+    registerNoPage.click();
 })
+// register Checkbox Yes click 
+
+if (!checkboxYes ) {
+    return checkboxYes = '';
+}
+checkboxYes.addEventListener('click', (e)=> {
+    registerPage.click();
+})
+
+
 
 
 
