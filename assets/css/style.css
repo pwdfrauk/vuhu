@@ -1186,4 +1186,7 @@ select#location {
         width: 94%;
         margin: auto;
     }
+    .account-link {
+        margin-left: 49px !important;
+    }
 }
