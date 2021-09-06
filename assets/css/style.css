@@ -78,6 +78,16 @@ a {
 .color-grey-2 {
     color:#4F4F4F;
 }
+.color-grey-3 {
+    color:#828282;
+
+}
+.color-white {
+    color:#ffffff;
+}
+.color-disable {
+    color:#BDBDBD;
+}
 /* color name col -3  */
 /* hero section gradient  */
 /* button sm */
@@ -104,6 +114,7 @@ a {
     text-decoration: none;
     padding: 20px 68px;
     transition: 0.3s ease;
+    
 }
 .button-small::after,
 .button-large::after {
@@ -135,6 +146,9 @@ a {
     align-items: center;
     padding-top: 20px;
 }
+.bg-gradient-menu-area {
+    padding-bottom: 20px;
+}
 .navigation-area .logo-link {
     text-decoration: none !important;
 }
@@ -142,7 +156,7 @@ a {
     display: flex;
 }
 .logo-image {
-    width: 95px;
+    width: 90px;
 }
 .logo-image img {
      width: 80%;
@@ -155,11 +169,44 @@ a {
     font-size: 30px;
     font-weight: 800;
     color:#263238;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 .navigation {
     width: 50%;
     margin-left: auto;
+}
+.bg-gradient-nav {
+    width: auto;
+}
+.bg-gradient-nav .desktop-menu {}
+.bg-gradient-nav .desktop-menu li {
+    margin-right: 64px;
+}
+.bg-gradient-nav .desktop-menu li:last-child {
+    margin-right: 0px;
+}
+.bg-gradient-nav .desktop-menu .notification-icon {
+    font-size: 25px;
+    width: 30px;
+    position: relative;
+}
+.bg-gradient-nav .desktop-menu .notification-icon.active {
+    color:;
+}
+.bg-gradient-nav .desktop-menu  .notification-icon.active .notification-alert {
+    width: 8px;
+    height: 8px;
+    background:red;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.bg-gradient-nav .desktop-menu .profile-img-area .profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 .navigation ul {
     list-style-type: none;
@@ -179,6 +226,9 @@ a {
     font-weight: 700;
     text-transform: capitalize;
     padding-bottom: 5px;
+}
+.bg-gradient-nav .mobile-navigation {
+    justify-content: flex-end;
 }
 .navigation ul li a::after {
     content: '';
@@ -259,6 +309,10 @@ transform: translateX(-50%);
 }
 .mobile-menu-trial-button  a.button-small {
     background: #ffffff;
+}
+.mobile-slider-nav-logout {
+    position: absolute;
+    bottom: 30px;
 }
 /* end navigation area  */
 
@@ -690,8 +744,10 @@ input::focus {
     width: 25px;
     position: absolute;
     top: 50%;
+    font-size: 20px;
     left: 20px;
     transform: translateY(-50%);
+    z-index: 1;
 }
 .show-pass-icon {
     width: 25px;
@@ -839,5 +895,131 @@ textarea {
     }
 }
 /* 
-login page style 
+login page style
 */
+
+/* ************************* Start account setting page style **************************/
+.account-setting-section {
+    padding-top: 78px;
+    height: calc(100vh + 20vh);
+}
+.account-leftside {}
+
+.dashboart-activity,
+.add-account {
+    margin-left: 15px;
+    display: block;
+}
+.dashboart-activity {
+    margin-bottom: 60px !important;
+}
+
+.add-account {
+    margin-top: 30px;
+}
+.dasboard-icon {
+}
+.Dashboard-title {
+}
+.account-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.add-account {
+    font-size: 16px;
+    font-weight: 600;
+}
+.add-account i {
+    font-size: 18px;
+    
+}
+.add-account span {}
+.account-setting-card {
+    border:1px solid #E0E0E0;
+    padding: 64px 34px;
+    margin: auto;
+}
+.account-setting-card-title {
+    font-size: 24px;
+}
+.card-add-user-img {
+    margin-bottom: 50px;
+}
+.image-upload:hover {
+    cursor: pointer;
+} 
+#add-image {
+    display: none;
+}
+@media only screen and (max-width:576px) {
+    .account-setting-section {
+        padding-top:100px;
+        height: 100vh;
+    }
+    .account-setting-card  {
+        padding: 40px 15px;
+    }
+    .card-add-user-img {
+        margin-bottom: 25px;
+    }
+}
+/* account add style */
+.account-add-section .add-account:hover {
+    color:#BDBDBD;
+}
+select#location {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    padding-right: 15px;
+    border: 2px solid rgba(51, 51, 51, 0.5);
+    position: relative;
+    width: 100%;
+}
+.input-group {
+    position: relative;
+}
+.account-add-card {
+    border: none !important;
+}
+.account-add-form {}
+.account-add-form input[type="text"], 
+.account-add-form input[type="password"],
+.account-add-form input[type="email"],
+.account-add-form select {
+    background-color: #F2F2F2;
+}
+.status {
+    color: #EB5757;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px;
+    display: none;
+}
+.add-account-pass.active {
+    border-color: #820BF0;
+}
+.add-account-pass.active+i{
+    color: #820BF0;
+}
+.add-account-pass.wrrong {
+    border-color: #EB5757;
+}
+.add-account-pass.wrrong+i{
+    color: #EB5757;
+}
+.wrrong {
+    display: block;
+}
+.account-add-form select:focus {
+    outline: none;
+    border: 2px solid rgba(51, 51, 51, 0.5);
+    border-radius: none;
+}
+@media only screen and (max-width:576px) {
+   .account-add-section {
+       padding-top: 65px;
+   }
+}
