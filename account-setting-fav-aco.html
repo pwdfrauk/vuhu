@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuhu</title>
+    <!-- font wesome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- google font inter  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- boostrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- style css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="bg-gradient">
+        <div class="container-fluid">
+            <div class="bg-gradient-menu-area navigation-area">
+                <a class="logo-link" href="#">
+                    <div class="vuhu-logo">
+                            <div class="logo-image">
+                                <img src="images/logo.png" alt="logo">
+                            </div>
+                            <div class="logo-tile">
+                                <h2 >vuhu</h2>
+                            </div>
+                    </div>
+                </a>
+                    <div class="bg-gradient-nav navigation">
+                        <ul class="desktop-menu">
+                            <!-- add class name active for notification active -->
+                            <li class="notification-icon active">
+                                <i class="far fa-bell"></i>
+                            <span class="notification-alert"></span>
+                            </li>
+                            <li class="profile-img-area">
+                                <img class="profile-img" class="" src="images/profile-img.png" alt="">
+                            </li>
+                        </ul>
+                        <!-- mobile menu click icon  -->
+                        <ul class="mobile-navigation">
+                            <li>
+                                <i class="mobile-toggle-icon fas fa-bars"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- mobile slider nemu  -->
+                    <div class="mobile-menu">
+                        <div class="menu-close-button">
+                            <i class="fas fa-times mobile-slider-close"></i>
+                        </div>
+                        <div class="monile-menu-link">
+                            <a class="dashboart-activity color-grey-3 ms-0" href="#">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img class="dasboard-icon" src="images/mobile-dashboard-icon.png" alt="dashboard-icon">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="Dashboard-title">Dashboard</span>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <h5 class="account-title color-white">Accounts</h5>
+                            <a class="add-account my-3" href="javascript:void(0)">
+                                <img class="add-account-accoun-imag me-2" src="images/insta.png" alt="img">
+                                 <span class="account-name font-18">@insta_vuhu</span>
+                             </a>
+                             <a class="add-account color-grey-3 my-3" href="#">
+                                  <span class="account-link ms-4">Favourite Accounts</span>
+                              </a>
+                              <a class="add-account color-grey-3 my-3" href="#">
+                                 <span class="account-link ms-4">Whitelist (2.1k)</span>
+                             </a>
+                            <a class="add-account color-violet ml-0" href="account-add.html">
+                                <i class="me-4 fas fa-plus-square"></i>
+                                <span>Connect New Account</span>
+                            </a>
+                        </div>
+                        <div class="mobile-slider-nav-logout">
+                            <a class="color-white ms-5" href="index.html">
+                                <i class="fas fa-power-off"></i><span class="color-white ms-2">Log Out</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+    </header>
+       <section class="account-setting-section account-add-fav-aco">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 d-none d-md-block" >
+                        <div class="account-leftside">
+                            <a class="dashboart-activity color-grey-3" href="#">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img class="dasboard-icon" src="images/dashboar-icon.png" alt="dashboard-icon">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="Dashboard-title">Dashboard</span>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <h5 class="account-title color-grey-2">Accounts</h5>
+                            <a class="add-account my-3" href="javascript:void(0)">
+                               <img class="add-account-accoun-imag me-2" src="images/insta.png" alt="img">
+                                <span class="account-name font-18">@insta_vuhu</span>
+                            </a>
+                            <a class="add-account color-grey-3 my-3" href="#">
+                                 <span class="account-link ms-4">Favourite Accounts</span>
+                             </a>
+                             <a class="add-account color-grey-3 my-3" href="#">
+                                <span class="account-link ms-4">Whitelist (2.1k)</span>
+                            </a>
+                            <a class="add-account color-grey-3 my-3" href="#">
+                                <span class="account-link ms-4">Disconnect Account</span>
+                            </a>
+                            <a class="add-account color-disable ms-0 mt-5" href="javascript:void(0)">
+                                <i class="me-4 fas fa-plus-square"></i>
+                                <span>Connect New Account</span>
+                            </a>
+                            <div class="account-add-fav-aco-logout">
+                            <a class="color-grey-3 ms-5" href="index.html">
+                                <i class="fas fa-power-off"></i><span class="color-grey-3 ms-2">Log Out</span>
+                            </a>
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9" >
+                        <div class="account-rightside">
+                            <div class="account-setting-fav-aco-area col-md-12">
+                                <div class="row">
+                                    <div class="grow-info col-md-6 col-xl-4 d-flex align-items-center">
+                                        <h4 class="fav-aco-title font-24" >Your favourite accounts</h4>
+                                    </div>
+                                    <div class="check-grow-info col-md-6 col-xl-6 ">
+                                        <select class="grow-between-select" name="grow-between" id="grow-between">
+                                            <option value="last-28days">Last 28 days</option>
+                                            <option value="last-15days">Last 15 days</option>
+                                            <option value="last-7days">Last 7 days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="account-and-follower-card-are">
+                                <!-- accound and follower area single single  -->
+                                <div class="row account-and-follower-card my-3" >
+                                    <div class="col-8 col-md-6 col-xl-4 px-0 px-md-2">
+                                        <!-- account alert area -->
+                                        <div class="alert-box col-12 ">
+                                            <div class="row justify-content-center justify-content-md-start">
+                                                <div class="col-10 px-0 px-md-2">
+                                                    <div class="row">
+                                                        <div class="col-3 col-md-4 px-0 px-md-2">
+                                                            <img class="alert-imag alert-fav-aco-img" src="images/insta.png" alt="insta">
+                                                        </div>
+                                                        <div class="col-9 col-md-8 d-flex flex-column justify-content-center px-0 px-md-2  ">
+                                                            <h3 class="alert-title font-16">cristiano</h3>
+                                                            <p class="alert-sub-title font-14 mb-0">328m followers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 col-md-2 px-0 px-md-2 d-flex justify-content-center align-items-center">
+                                                    <i class="close-alert fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end account alert area -->
+                                    </div>
+                                    <div class="col-4 col-md-6 col-xl-4">
+                                        <!-- system incress card -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <div class="system-incress-icon-area d-md-flex justify-content-center align-items-center">
+                                                    <img class="graph-increase-img" src="images/graph-increase.png" alt="incress-img">
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-7 d-md-flex flex-column  justify-content-center">
+                                                <div class="gained-info">
+                                                    <p class="gained-title color-black-3 font-18 mb-0">148 followers</p>
+                                                    <span class="gained">Gained</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single account and follower area  -->
+                                 <!-- accound and follower area single single  -->
+                                 <div class="row account-and-follower-card my-3" >
+                                    <div class="col-8 col-md-6 col-xl-4 px-0 px-md-2">
+                                        <!-- account alert area -->
+                                        <div class="alert-box col-12 ">
+                                            <div class="row justify-content-center justify-content-md-start">
+                                                <div class="col-10 px-0 px-md-2">
+                                                    <div class="row">
+                                                        <div class="col-3 col-md-4 px-0 px-md-2">
+                                                            <img class="alert-imag alert-fav-aco-img" src="images/insta.png" alt="insta">
+                                                        </div>
+                                                        <div class="col-9 col-md-8 d-flex flex-column justify-content-center px-0 px-md-2  ">
+                                                            <h3 class="alert-title font-16">cristiano</h3>
+                                                            <p class="alert-sub-title font-14 mb-0">328m followers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 col-md-2 px-0 px-md-2 d-flex justify-content-center align-items-center">
+                                                    <i class="close-alert fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end account alert area -->
+                                    </div>
+                                    <div class="col-4 col-md-6 col-xl-4">
+                                        <!-- system incress card -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <div class="system-incress-icon-area d-md-flex justify-content-center align-items-center">
+                                                    <img class="graph-increase-img" src="images/graph-increase.png" alt="incress-img">
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-7 d-md-flex flex-column  justify-content-center">
+                                                <div class="gained-info">
+                                                    <p class="gained-title color-black-3 font-18 mb-0">148 followers</p>
+                                                    <span class="gained">Gained</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single account and follower area  -->
+                                 <!-- accound and follower area single single  -->
+                                 <div class="row account-and-follower-card my-3" >
+                                    <div class="col-8 col-md-6 col-xl-4 px-0 px-md-2">
+                                        <!-- account alert area -->
+                                        <div class="alert-box col-12 ">
+                                            <div class="row justify-content-center justify-content-md-start">
+                                                <div class="col-10 px-0 px-md-2">
+                                                    <div class="row">
+                                                        <div class="col-3 col-md-4 px-0 px-md-2">
+                                                            <img class="alert-imag alert-fav-aco-img" src="images/insta.png" alt="insta">
+                                                        </div>
+                                                        <div class="col-9 col-md-8 d-flex flex-column justify-content-center px-0 px-md-2  ">
+                                                            <h3 class="alert-title font-16">cristiano</h3>
+                                                            <p class="alert-sub-title font-14 mb-0">328m followers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 col-md-2 px-0 px-md-2 d-flex justify-content-center align-items-center">
+                                                    <i class="close-alert fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end account alert area -->
+                                    </div>
+                                    <div class="col-4 col-md-6 col-xl-4">
+                                        <!-- system incress card -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <div class="system-incress-icon-area d-md-flex justify-content-center align-items-center">
+                                                    <img class="graph-increase-img" src="images/graph-increase.png" alt="incress-img">
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-7 d-md-flex flex-column  justify-content-center">
+                                                <div class="gained-info">
+                                                    <p class="gained-title color-black-3 font-18 mb-0">148 followers</p>
+                                                    <span class="gained">Gained</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single account and follower area  -->
+                                 <!-- accound and follower area single single  -->
+                                 <div class="row account-and-follower-card my-3" >
+                                    <div class="col-8 col-md-6 col-xl-4 px-0 px-md-2">
+                                        <!-- account alert area -->
+                                        <div class="alert-box col-12 ">
+                                            <div class="row justify-content-center justify-content-md-start">
+                                                <div class="col-10 px-0 px-md-2">
+                                                    <div class="row">
+                                                        <div class="col-3 col-md-4 px-0 px-md-2">
+                                                            <img class="alert-imag alert-fav-aco-img" src="images/insta.png" alt="insta">
+                                                        </div>
+                                                        <div class="col-9 col-md-8 d-flex flex-column justify-content-center px-0 px-md-2  ">
+                                                            <h3 class="alert-title font-16">cristiano</h3>
+                                                            <p class="alert-sub-title font-14 mb-0">328m followers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 col-md-2 px-0 px-md-2 d-flex justify-content-center align-items-center">
+                                                    <i class="close-alert fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end account alert area -->
+                                    </div>
+                                    <div class="col-4 col-md-6 col-xl-4">
+                                        <!-- system incress card -->
+                                        <div class="row">
+                                            <div class="col-12 col-md-5">
+                                                <div class="system-incress-icon-area d-md-flex justify-content-center align-items-center">
+                                                    <img class="graph-increase-img" src="images/graph-increase.png" alt="incress-img">
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 col-md-7 d-md-flex flex-column  justify-content-center">
+                                                <div class="gained-info">
+                                                    <p class="gained-title color-black-3 font-18 mb-0">148 followers</p>
+                                                    <span class="gained">Gained</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end single account and follower area  -->
+
+                 </div>
+                        <p class="color-violet"> Add your favourite accounts (4/5)</p>
+                        <div>
+                            <form class="account-add-form mt-4 col-md-9 col-xl-5" action="">
+                                <div class="input-group">
+                                    <input type="text" id="username" name="username" placeholder="IG Username">
+                                    <i class="input-icon fas fa-user"></i>
+                                </div>
+                                
+                                
+                                <div class="reg-submit-button text-center text-md-start mt-3 mt-md-5">
+                                    <input class="button-large from-submit-button" type="submit" value="Connect">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+           let alertClose = document.querySelectorAll('.close-alert');
+           alertClose.forEach(function(trigger) {
+               trigger.addEventListener('click', (e)=> {
+                   e.preventDefault();
+                   e.target.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
+                   e.target.parentNode.parentNode.parentNode.parentNode.nextElementSibling.style.display = "none";
+                console.log()
+               })
+           })
+           
+       });
+   </script>
+
+
+    <!-- chart.js  -->
+
+    <!-- boostrap js  -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- main js -->
+         <script src="assets/js/main.js"></script>
+</body>
+</html>

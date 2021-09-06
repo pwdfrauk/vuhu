@@ -1173,7 +1173,7 @@ select#location {
 }
 .account-fav-logout {
     position: absolute;
-    bottom: 0;
+    bottom:-30%;
 }
 @media only screen and (max-width:576px) {
     .account-stt-header-and-flow-dtls::after  {
@@ -1192,5 +1192,71 @@ select#location {
     }
     .account-link {
         margin-left: 49px !important;
+    }
+}
+
+/*  account setting fav aco style */
+.system-incress-icon-area {
+    width: 115px;
+    height: 100px;
+    background-color: rgba(111, 207, 151, 0.3);
+}
+.gained-title {
+    font-weight: 500;
+}
+.gained {
+    font-size: 14px;
+    color:#27AE60;
+    font-weight: 500;
+}
+.account-add-fav-aco {
+    height:calc(100vh + 50vh);
+}
+.account-add-fav-aco-logout {
+    margin-top: 370px;
+}
+@media only screen and (max-width:768px) {
+    .account-link {
+        font-weight: 400;
+        margin-left: -14px !important;
+    }
+    .fav-aco-title {
+        font-size: 20px;
+    }
+    .system-incress-icon-area  {
+        width: auto;
+    }
+} 
+@media only screen and (max-width:576px) {
+    .account-add-fav-aco {
+        padding-top: 20px;
+    }
+    .account-link {
+        margin-left: 49px !important;
+    }
+    .alert-fav-aco-img  {
+        width: 40px;
+        height: 40px;
+    }
+    .alert-title  {
+        margin-bottom: 0px;
+    }
+    .system-incress-icon-area  {
+        width: auto;
+        height: 100%;
+        display: flex;
+    }
+    .gained-info  {
+        text-align: center;
+        background-color: rgba(111, 207, 151, 0.3);
+    }
+    .gained-title {
+        font-size: 14px;
+    }
+    .gained {
+        font-size: 12px;
+    }
+    .graph-increase-img {
+        width: 35%;
     }
 }
