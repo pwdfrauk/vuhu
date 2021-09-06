@@ -19,7 +19,7 @@
 </head>
 <body>
     <header class="bg-gradient">
-        <div class="container-fluid">
+        <div class="container">
             <div class="bg-gradient-menu-area navigation-area">
                 <a class="logo-link" href="#">
                     <div class="vuhu-logo">
@@ -106,39 +106,43 @@
 
                         </div>
                     </div>
-                    <div class="col-md-9" >
+                    <div class="col-12 col-md-9" >
                         <div class="account-rightside">
-                            <div class="account-add-fav-area col-md-8">
-                                <div class="row">
-                                    <div class="col-3">
+                            <div class="account-add-fav-area col-md-12">
+                                <div class="row mb-5">
+                                    <div class="col-4 col-md-2 me-md-4 me-xl-0">
                                         <img class="fav-image" src="images/insta.png" alt="insta-img">
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-8 col-md-8 d-flex justify-content-start align-items-center">
+                                        <div>
                                         <h2 class="fav-title">@insta_vuhu</h2>
-                                        <p class="color-violet">14 days free trial</p>
+                                        <a class="fab-sub-title color-violet" href="#">14 days free trial</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4>Add your favourite IG followers</h4>
-                                <p>To get started, we ask you to connect at least 3 of your 'favourite accounts', your favourite accounts should be those who are a similar demographic and match to your profile. If you post content related to bands, then those interested in music are more likely to follow and engage with you! </p>
-                                <div class="alert-box col-md-6">
+                                <h4 class="font-24 color-black-3 mb-3">Add your favourite IG followers</h4>
+                                <p class="font-18 color-black-3 col-12">To get started, we ask you to connect at least 3 of your 'favourite accounts', your favourite accounts should be those who are a similar demographic and match to your profile. If you post content related to bands, then those interested in music are more likely to follow and engage with you! </p>
+                                <!-- alert box start  -->
+                                <div class="alert-box col-md-9 col-xl-5 mt-5">
                                     <div class="row">
                                         <div class="col-10">
                                             <div class="row">
-                                                <div class="col-2">
-                                                    <img src="images/insta.png" alt="insta">
+                                                <div class="col-3">
+                                                    <img class="alert-imag" src="images/insta.png" alt="insta">
                                                 </div>
-                                                <div class="col-10">
-                                                    <h3>cristiano</h3>
-                                                    <p class="">328m followers</p>
+                                                <div class="col-9 d-flex flex-column justify-content-center  ">
+                                                    <h3 class="alert-title font-16">cristiano</h3>
+                                                    <p class="alert-sub-title font-14 mb-0">328m followers</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-2">
-                                            icon for close altert box
+                                        <div class="col-2 d-flex justify-content-center align-items-center">
+                                            <i class="close-alert fas fa-times"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <form class="account-add-form mt-4 col-md-6" action="">
+                                <!-- end altert box -->
+                                <form class="account-add-form mt-4 col-md-9 col-xl-5" action="">
                                     <div class="input-group">
                                         <input type="text" id="username" name="username" placeholder="IG Username">
                                         <i class="input-icon fas fa-user"></i>
@@ -159,6 +163,13 @@
 
     <script>
          document.addEventListener("DOMContentLoaded", function(event) { 
+            let alertClose = document.querySelectorAll('.close-alert');
+            alertClose.forEach(function(trigger) {
+                trigger.addEventListener('click', (e)=> {
+                    e.preventDefault();
+                    e.target.parentNode.parentNode.parentNode.style.display = 'none';
+                })
+            })
             
         });
     </script>
