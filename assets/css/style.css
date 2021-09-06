@@ -771,12 +771,12 @@ input::focus {
     position: relative;
 }
 .coupon-code-input {
-    border:1px solid red;
     z-index: 20;
     font-size: 50px;
     padding: 0px;
     border: none;
     background: transparent;
+    text-transform: uppercase;
 }
 .coupon-placeholder-bar {
     position: absolute;
