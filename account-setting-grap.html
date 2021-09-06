@@ -15,11 +15,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- style css  -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
     <header class="bg-gradient">
-        <div class="container-fluid">
+        <div class="container">
             <div class="bg-gradient-menu-area navigation-area">
                 <a class="logo-link" href="#">
                     <div class="vuhu-logo">
@@ -83,7 +85,7 @@
         </div>
     </header>
        <section class="account-setting-section account-add-fav">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-3 d-none d-md-block" >
                         <div class="account-leftside">
@@ -99,7 +101,20 @@
                                 </div>
                             </a>
                             <h5 class="account-title color-grey-2">Accounts</h5>
-                            <a class="add-account color-disable ml-0" href="javascript:void(0)">
+                            <a class="add-account my-3" href="javascript:void(0)">
+                               <img class="add-account-accoun-imag me-2" src="images/insta.png" alt="img">
+                                <span class="account-name font-18">@insta_vuhu</span>
+                            </a>
+                            <a class="add-account color-grey-3 my-3" href="#">
+                                 <span class="account-link ms-4">Favourite Accounts</span>
+                             </a>
+                             <a class="add-account color-grey-3 my-3" href="#">
+                                <span class="account-link ms-4">Whitelist (2.1k)</span>
+                            </a>
+                            <a class="add-account color-grey-3 my-3" href="#">
+                                <span class="account-link ms-4">Disconnect Account</span>
+                            </a>
+                            <a class="add-account color-disable ms-0 mt-5" href="javascript:void(0)">
                                 <i class="me-4 fas fa-plus-square"></i>
                                 <span>Connect New Account</span>
                             </a>
@@ -108,51 +123,48 @@
                     </div>
                     <div class="col-12 col-md-9" >
                         <div class="account-rightside">
-                            <div class="account-add-fav-area col-md-12">
-                                <div class="row mb-5">
-                                    <div class="col-4 col-md-2 me-md-4 me-xl-0">
+                            <div class="account-setting-grap-area col-md-12">
+                                <div class="account-stt-header-and-flow-dtls row mb-5">
+                                    <div class="col-4 col-md-2 me-md-4 col-xl-2 me-xl-0">
                                         <img class="fav-image" src="images/insta.png" alt="insta-img">
                                     </div>
-                                    <div class="col-8 col-md-8 d-flex justify-content-start align-items-center">
+                                    <div class="col-8 col-md-4 col-xl-4 d-flex justify-content-start align-items-center">
                                         <div>
                                         <h2 class="fav-title">@insta_vuhu</h2>
                                         <a class="fab-sub-title color-violet" href="#">14 days free trial</a>
                                         </div>
                                     </div>
-                                </div>
-                                <h4 class="font-24 color-black-3 mb-3">Add your favourite IG followers</h4>
-                                <p class="font-18 color-black-3 col-12">To get started, we ask you to connect at least 3 of your 'favourite accounts', your favourite accounts should be those who are a similar demographic and match to your profile. If you post content related to bands, then those interested in music are more likely to follow and engage with you! </p>
-                                <!-- alert box start  -->
-                                <div class="alert-box col-md-9 col-xl-5 mt-5">
-                                    <div class="row">
-                                        <div class="col-10">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <img class="alert-imag" src="images/insta.png" alt="insta">
-                                                </div>
-                                                <div class="col-9 d-flex flex-column justify-content-center  ">
-                                                    <h3 class="alert-title font-16">cristiano</h3>
-                                                    <p class="alert-sub-title font-14 mb-0">328m followers</p>
-                                                </div>
+                                    <div class="account-fllowers-details col-12 col-md-12 mt-4 mt-xl-0 col-xl-6">
+                                            <div class="row account-fllowers-info">
+                                                <h2 class="font-30">2.1k</h2>
+                                                <p class="color-grey-3">Followers</p>
                                             </div>
-                                        </div>
-                                        <div class="col-2 d-flex justify-content-center align-items-center">
-                                            <i class="close-alert fas fa-times"></i>
-                                        </div>
+                                            <div class="row account-fllowers-info">
+                                                <h2 class="font-30">1.1k</h2>
+                                                <p class="color-grey-3">Followings</p>
+                                            </div>
+                                            <div class="row account-fllowers-info">
+                                                <h2 class="font-30">131</h2>
+                                                <p class="color-grey-3">Post</p>
+                                            </div>
                                     </div>
                                 </div>
-                                <!-- end altert box -->
-                                <form class="account-add-form mt-4 col-md-9 col-xl-5" action="">
-                                    <div class="input-group">
-                                        <input type="text" id="username" name="username" placeholder="IG Username">
-                                        <i class="input-icon fas fa-user"></i>
+                                <div class="row">
+                                    <div class="grow-info col-md-8">
+                                        <h4 class="grow-title" >Growth Overview</h4>
+                                        <p class="grow-subtitle color-black-3">Your account's follower growth over the last 28 days.</p>
                                     </div>
-                                   
-                                  
-                                   <div class="reg-submit-button text-center text-md-start mt-3 mt-md-5">
-                                       <input class="button-large from-submit-button" type="submit" value="Connect">
-                                   </div>
-                               </form>
+                                    <div class="check-grow-info d-flex align-items-center justify-content-end col-md-4">
+                                        <select class="grow-between-select" name="grow-between" id="grow-between">
+                                            <option value="last-28days">Last 28 days</option>
+                                            <option value="last-15days">Last 15 days</option>
+                                            <option value="last-7days">Last 7 days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <canvas id="myChart" width="400" height="100%"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,19 +172,47 @@
             </div>
        </section>
     
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['3/8', '4/8', '5/8', '6/8', '7/8', '8/8', '9/8', '10/8', '11/8', '12/8' ],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3, 4, 5, 6, 7, 50,],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
 
-    <script>
-         document.addEventListener("DOMContentLoaded", function(event) { 
-            let alertClose = document.querySelectorAll('.close-alert');
-            alertClose.forEach(function(trigger) {
-                trigger.addEventListener('click', (e)=> {
-                    e.preventDefault();
-                    e.target.parentNode.parentNode.parentNode.style.display = 'none';
-                })
-            })
-            
-        });
     </script>
+
+    <!-- chart.js  -->
 
     <!-- boostrap js  -->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
