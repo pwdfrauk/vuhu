@@ -739,7 +739,7 @@ input {
     padding-bottom: 15px;
     padding-left: 60px;
     padding-right: 15px;;
-    border: 2px solid rgba(51, 51, 51, 0.5);
+    border: 1px solid #000000;
     outline: none;
 }
 input[type='email'],
@@ -874,15 +874,15 @@ input::focus {
 textarea {
     padding: 20px;
     width: 100%;
-    border-bottom:2px solid rgba(51, 51, 51, 0.5) !important;
-    border-top:2px solid rgba(51, 51, 51, 0.5) !important;
-    border-left:2px solid rgba(51, 51, 51, 0.5) !important;
-    border-right:2px solid rgba(51, 51, 51, 0.5) !important;
-    border-bottom:2px solid rgba(51, 51, 51, 0.5) !important;
+    border-bottom:1px solid #000000 !important;
+    border-top:1px solid #000000 !important !important;
+    border-left:1px solid #000000 !important !important;
+    border-right:1px solid #000000 !important !important;
+    border-bottom:1px solid #000000 !important !important;
 }
 textarea:focus {
     outline: none;
-    border-bottom:2px solid rgba(51, 51, 51, 0.5);
+    border:1px solid #000000 !important;
 }
 .login-section {
     display: flex;
@@ -1019,7 +1019,7 @@ select#location {
     padding-bottom: 16px;
     padding-left: 60px;
     padding-right: 15px;
-    border: 2px solid rgba(51, 51, 51, 0.5);
+    border: 1px solid #000000;
     position: relative;
     width: 100%;
 }
@@ -1061,7 +1061,7 @@ select#location {
 }
 .account-add-form select:focus {
     outline: none;
-    border: 2px solid rgba(51, 51, 51, 0.5);
+    border:1px solid #000000;
     border-radius: none;
 }
 @media only screen and (max-width:576px) {
@@ -1164,12 +1164,12 @@ select#location {
     padding:15px;
     width: 100%;
     background: transparent;
-    border-bottom:1px solid rgba(51, 51, 51, 0.5);
+    border-bottom:1px solid #000000;
 
 }
 .grow-between-select:focus {
     outline: none;
-    border-bottom:1px solid rgba(51, 51, 51, 0.5);
+    border-bottom:1px solid #000000;
 }
 .account-fav-logout {
     position: absolute;
