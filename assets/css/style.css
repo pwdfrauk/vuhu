@@ -95,11 +95,14 @@ a {
 .font-24 {
     font-size: 24px;
 }
+.font-20 {
+    font-size: 20px;
+}
 .font-16 {
     font-size: 16px;
 }
 .font-18 {
-    font-size: 18;
+    font-size: 18px;
 }
 .font-14 {
     font-size: 14px;
@@ -159,7 +162,7 @@ a {
 }
 .pup-up-box {
     width: 50%;
-    height: 400px;
+    height: 50vh;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -841,6 +844,9 @@ input::focus {
 .terms-of-service-pop-area {
     display: none;
 }
+.terms-pop-up-box {
+    height: auto;
+}
 .terms-pop-header {
     font-size: 24px;
     font-weight: 600;
@@ -883,9 +889,13 @@ terms-button {
 3.2 register page Responsive Style + register no page style 
 ************************************
  */
- @media only screen and (max-width: 760px ) {
+ @media only screen and (max-width: 768px ) {
     .register-page-hero-section  {
         height: 100vh;
+    }
+    .terms-pop-up-box {
+        width: 80% !important;
+        height: auto;
     }
     .register-page-hero-section .hero-home-img {
         display: none;
@@ -895,6 +905,13 @@ terms-button {
  @media only screen and (max-width: 576px ) {
     .register-page-hero-section  {
         height: calc(100vh + 30vh)
+    }
+    .terms-pop-up-box {
+        width: 80% !important;
+        height: auto;
+    }
+    .terms-pop-header {
+        font-size: 18px;
     }
     .register-hero-area {
         padding: 50px 0px;
@@ -1278,7 +1295,7 @@ select#location {
     height:calc(100vh + 50vh);
 }
 .account-add-fav-aco-logout {
-    margin-top: 370px;
+    margin-top: 50px;
 }
 @media only screen and (max-width:768px) {
     .account-link {
@@ -1324,4 +1341,36 @@ select#location {
     .graph-increase-img {
         width: 35%;
     }
+}
+
+/* Whitwlist page style  */
+.whitlist-remove-button {
+    background-color: #333333;
+    box-shadow: 4px 4px 0px #000000;
+    padding: 10px 35px;
+    color: #ffffff;
+    border: none;
+}
+.whitlist-remove-button:hover {
+    box-shadow: 2px 2px 0px #000000;
+    transform: translateY(1px);
+}
+/* whitelist page style  */
+.whitelist-account-card-area {
+    /* height: 100vh;
+    overflow: auto; */
+}
+.not-whitelist-account-card-area  {
+    /* height:100vh;
+    overflow: auto; */
+}
+.not-whitelist-account-card-area {
+    background-color: #F9F9F9;
+}
+.not-whitelist-img {
+    width: 40px;
+    height: 40px;
+    border:2px dashed #820BF0;
+    border-radius: 50%;
+    padding: 3px;
 }
