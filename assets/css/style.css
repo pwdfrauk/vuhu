@@ -147,6 +147,27 @@ a {
     box-shadow: 1px 1px 0px #000000;
     transform: translateY(1px);
 }
+/* pop up area  */
+.pop-up-area {
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(79, 79, 79, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.pup-up-box {
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+}
+
 /* 
 ***********************************
  end  Global Style  
@@ -734,6 +755,9 @@ End Home page Responsive style
     font-size: 16px;
     font-weight: 400;
 }
+.terms-button {
+    font-weight: 600;
+}
 input {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -812,6 +836,47 @@ input::focus {
     border:none;
     padding: 16px 70px;
     color: #ffffff;
+}
+/* tegister terms of service  */
+.terms-of-service-pop-area {
+    display: none;
+}
+.terms-pop-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+.terms-info {
+    overflow-y: auto;
+    height: 240px;
+}
+terms-button {
+    display: inline-block;
+}
+.terms-agree {
+    display: flex;
+    justify-content: space-between;
+}
+.terms-button-agree {
+    background:#820BF0;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.terms-button-disagree {
+    background:#EB5757;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.terms-button-agree:hover,
+.terms-button-disagree:hover {
+    box-shadow: 2px 2px 0px #000000;
+	transform: translateY(1px);
+    color: #ffffff;
+}
+.terms-button-show {
+    font-weight: 600;
 }
 /* 
 **********************************

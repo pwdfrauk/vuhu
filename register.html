@@ -78,11 +78,12 @@
                         <h2 class="reg-title color-black-3 text-center text-md-start mb-4 mb-md-3">
                             Register now for your free trial
                         </h2>
-                        <p class="reg-desc color-black-3 text-center text-md-start mb-4">Simply register an account by selecting your 
+                        <p class="reg-desc color-black-3 text-center text-md-start mb-2">Simply register an account by selecting your 
                             email address and password below,
                              making sure to add your invitation code to gain access too.</p>
+                             <a class="terms-button-show color-violet" href="javascript:void(0)">By registering you agree to our terms of service.</a>
                         <!-- register form -->
-                        <form action="" method="" class="col-md-9">
+                        <form action="" method="" class="col-md-9 mt-3">
                             <div class="input-group">
                                 <input type="Email" id="email" name="email" placeholder="Email address">
                                 <i class="input-icon fas fa-envelope"></i>
@@ -117,7 +118,6 @@
                                     <span class="coupon-code-number"></span>
                                 </div>
                             </div>
-                            <p>By registering you agree to our terms of service.</p>
                             <div class="reg-submit-button text-center text-md-start">
                                 <input class="button-large from-submit-button" type="submit" value="Submit">
                             </div>
@@ -131,6 +131,51 @@
             </div>
         </div>
     </section>
+    <!-- terms of service pop up Box -->
+    <div class="terms-of-service-pop-area pop-up-area">
+        <div class="terms-pop-up-box pup-up-box">
+            <h3 class="terms-pop-header mb-4">By registering you agree to our terms of service.</h3>
+            <div class="terms-info">
+            <p class="terms-pop-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="terms-pop-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="terms-pop-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="terms-pop-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <a class="gohome" href="index.html"></a>
+            <div class="terms-agree  mt-4">
+                <a class="terms-button terms-button-disagree text-start " href="javascript:void(0)">Disagree</a>
+                <a class="terms-button terms-button-agree  text-end" href="javascript:void(0)">Agree</a>
+            </div>
+        </div>
+    </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -147,6 +192,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
             inputType.type = 'password';
         })
             });
+    // terms of service popup box
+        let showTermsProp = document.querySelector('.terms-button-show');
+        let propUpBox = document.querySelector('.terms-of-service-pop-area');
+        let goHome = document.querySelector('.gohome');
+        
+        showTermsProp.addEventListener('click', (e)=> {
+            propUpBox.style.display = 'block'
+           document.body.style.overflow = 'hidden';
+           let disagree = document.querySelector('.terms-button-disagree');
+           disagree.addEventListener('click', (e)=> {
+               goHome.click();
+           })
+           let agree = document.querySelector('.terms-button-agree');
+           agree.addEventListener('click', (e)=> {
+            propUpBox.style.display = 'none'
+           document.body.style.overflow = 'auto';
+           })
+        })
+
+
 </script>
 
     <!-- boostrap js  -->
