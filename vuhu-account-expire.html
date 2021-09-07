@@ -680,10 +680,30 @@
                 </div>
             </div>
     </section>
-  
+      <!-- account expire box -->
+      <div class="account-exprire-pop-area">
+        <div class="account-expire-pop-box">
+            <h2 class="account-expire-pop-title color-black-3 font-24 text-center my-2">Unfortunately your 2 week free trial has now expired </h2>
+            <p class="account-expire-desc text-center my-4">if you've enjoyed the experience, and want to continue to grow your Instagram account(s) then we absolutely welcome you to join us, our opening price plan starts at £14.99 per month, and that price will never increase.</p>
+            <div class=" text-center mt-4">
+                <button class="account-renew-button button-small color-white "  type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
 <script>
+      let accountExpirePopBox = document.querySelector('.account-exprire-pop-area');
+            if(accountExpirePopBox.style.display == '') {
+                document.body.style.overflow = 'hidden';
+                console.log('i am block')
+            } 
         document.addEventListener("DOMContentLoaded", function(event) { 
-         
+         let renewButton = document.querySelector('.account-renew-button');
+       
+            renewButton.addEventListener('click', (e)=> {
+                accountExpirePopBox.style.display = 'none';
+                document.body.style.overflow = 'auto'; 
+                console.log('clicked')
+            })
        });
    </script>
 
